@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router';
 import Editor from '../editor/editor';
 import Footer from '../footer/footer';
@@ -7,6 +7,41 @@ import Preview from '../preview/preview';
 import styles from './maker.module.css';
 
 const Maker = ({ authService }) => {
+  const [cards, setCards] = useState([
+    {
+      id: '1',
+      name: 'SeungYeong',
+      company: 'null',
+      theme: 'dark',
+      title: 'backsu',
+      email: 'lsyeong93@naver.com',
+      message: 'go for it',
+      fileName: 'seung',
+      fileURL: null,
+    },
+    {
+      id: '2',
+      name: 'SeungYeong',
+      company: 'null',
+      theme: 'light',
+      title: 'backsu',
+      email: 'lsyeong93@naver.com',
+      message: 'go for it',
+      fileName: 'seung',
+      fileURL: 'seung.png',
+    },
+    {
+      id: '3',
+      name: 'SeungYeong',
+      company: 'null',
+      theme: 'colorful',
+      title: 'backsu',
+      email: 'lsyeong93@naver.com',
+      message: 'go for it',
+      fileName: 'seung',
+      fileURL: null,
+    },
+  ]);
   const history = useHistory();
   const onLogout = () => {
     authService.logout();
@@ -23,8 +58,8 @@ const Maker = ({ authService }) => {
     <section className={styles.maker}>
       <Header onLogout={onLogout} />
       <div className={styles.container}>
-        <Editor />
-        <Preview />
+        <Editor cards={cards} />
+        <Preview cards={cards} />
       </div>
       <Footer />
     </section>
