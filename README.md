@@ -1,6 +1,5 @@
-# Getting Started with Create React App
+# Business Card Maker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ![image](https://user-images.githubusercontent.com/29043322/114346493-872ddd00-9b9e-11eb-9b52-6d02554b21a1.png)
 
 ## Available Scripts
