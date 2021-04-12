@@ -1,5 +1,6 @@
 # Business Card Maker
 - react-router로 로그인화면과 main 화면 경로 설정
+- cloudinary를 사용하여 이미지 파일 편집후 업로드
 
 ## 로그인화면
 ![image](https://user-images.githubusercontent.com/29043322/114352718-26ef6900-9ba7-11eb-91c7-03cf09d34e93.png)
