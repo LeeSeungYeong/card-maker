@@ -1,4 +1,5 @@
 # Business Card Maker
+- react-router로 로그인화면과 main 화면 경로 설정
 
 ## 로그인화면
 ![image](https://user-images.githubusercontent.com/29043322/114352718-26ef6900-9ba7-11eb-91c7-03cf09d34e93.png)
